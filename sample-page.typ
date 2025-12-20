@@ -5,3 +5,10 @@
 = Hello, typst
 
 Sample page
+
+
+$ dif x $
+
+We know that $x$ is a variable.
+
+Math above
