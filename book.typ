@@ -7,15 +7,27 @@
   authors: ("Ethan C",),
   summary: [
     #prefix-chapter("index.typ")[Introduction]
-    // = Overview
-    // - #chapter(none)[Overview]
-    // = Improvement types
-    // - #chapter(none)[Electrification]
-    // - #chapter(none)[High platforms]
-    // - #chapter(none)[Rolling stock]
-    // - #chapter(none)[Fare integration]
-    = Lines
-    - #chapter("lines/ic-ssl.typ")[Illinois Central/South Shore Line system]
+    = Overview
+    - #chapter("overview/overview.typ")[Overview]
+    = Core concepts
+    - #chapter("core-concepts/fare-integration.typ")[Fare integration]
+    - #chapter(none)[Electrification]
+    - #chapter(none)[High platforms]
+    - #chapter(none)[Rolling stock]
+    - #chapter(none)[Improved timetabling]
+    
+    = Phase 1: No new infrastructure
+    - #chapter("phase-1/introduction.typ")[Introduction]
+    - #chapter("core-concepts/fare-integration.typ")[Fare integration]
+    - #chapter(none)[ME/SSL]
+    - #chapter(none)[RI]
+
+    // = Phase 2: Capacity improvements
+
+    // = Vision of the future network
+
+    = Concepts and costs
+    - #chapter("concepts-and-costs/stations.typ")[Stations]
   ]
 )
 
