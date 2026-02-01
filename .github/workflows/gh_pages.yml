@@ -1,5 +1,5 @@
 # https://github.com/Myriad-Dreamin/shiroa/issues/83
-name: {{repo-name}}::gh_pages
+name: 'Build with shiroa'
 on:
   push:
     branches:
