@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: LGPL-2.1-or-later
 
-#import "@preview/shiroa:0.3.1": *
+#import "@preview/shiroa:0.2.3": *
 #import "/book.typ": book-page
 #show: book-page.with(title: "Regional Rail for Chicagoland")
 
