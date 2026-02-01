@@ -3,13 +3,13 @@ content_dir = "pages"
 
 [html.spine]
 title = "Regional Rail for Chicagoland DRAFT"
-vertebrae = ["index.typ", "phase-1/fare-integration.typ"]
+vertebrae = ["index.typ", "phase-1/fare-integration.typ", "phase-1/me-ssl.typ", "acknowledgements.typ"]
 
 [epub.spine]
 title = "Regional Rail for Chicagoland DRAFT"
-vertebrae = ["index.typ", "phase-1/fare-integration.typ"]
+vertebrae = ["index.typ", "phase-1/fare-integration.typ", "phase-1/me-ssl.typ", "acknowledgements.typ"]
 
 [pdf.spine]
 title = "Regional Rail for Chicagoland DRAFT"
-vertebrae = ["index.typ", "phase-1/fare-integration.typ"]
-merge = true
+vertebrae = ["index.typ", "phase-1/fare-integration.typ", "phase-1/me-ssl.typ", "acknowledgements.typ"]
+# merge = true

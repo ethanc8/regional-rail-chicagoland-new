@@ -17,7 +17,7 @@
 // NOTE: in the future, this can perhaps be provided by rheo
 #let rheobook(current-page: none, doc) = {
 
-  set text(font: ("Inter", "San Francisco", "Arial"))
+  set text(font: ("Libertinus Serif"))
 
   // NOTE: this links cannot be specified as ".typ" currently, as rheo only transforms links that
   // are registered in Typst's AST. As these links are directly rendered into HTML using `html.elem`,
@@ -25,6 +25,8 @@
   let pages = (
     (id: "index", title: "Introduction", file: "./"),
     (id: "fare-integration", title: "Fare integration", file: "./fare-integration.html"),
+    (id: "acknowledgements", title: "Acknowledgements", file: "./acknowledgements.html"),
+    (id: "me-ssl", title: "ME/SSL: Phase 1", file: "./me-ssl.html"),
   )
 
   // Calculate previous and next pages for navigation

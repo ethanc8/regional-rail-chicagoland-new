@@ -10,7 +10,7 @@ Transit in Chicagoland has reached a critical moment. As we narrowly avoided sev
 
 Regional Rail for Chicagoland
 
-Copyright (c) 2026 Ethan C and others (see #link("./acknowlegements.typ")[Acknowledgements]).
+Copyright (c) 2026 Ethan C and others (see #link("./acknowledgements.typ")[Acknowledgements]).
 
 You may redistribute and/or modify this document under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.
 
