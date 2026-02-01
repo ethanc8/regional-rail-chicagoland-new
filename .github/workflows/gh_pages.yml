@@ -1,14 +1,11 @@
-# https://raw.githubusercontent.com/Myriad-Dreamin/shiroa/refs/heads/main/.github/workflows/gh_pages.yml
-
+# https://github.com/Myriad-Dreamin/shiroa/issues/83
+name: {{repo-name}}::gh_pages
 on:
-  # Runs on pushes targeting the default branch
   push:
-    branches: ['trunk']
-
-  # Allows you to run this workflow manually from the Actions tab
+    branches:
+      - main
   workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+    
 permissions:
   pages: write
   id-token: write
@@ -28,38 +25,28 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: recursive
+        uses: actions/checkout@v3
+      - run: git submodule update --init --recursive
       - name: Download font assets
+        # use fonts in stable releases
         run: |
-          mkdir -p assets/fonts
-          curl -L https://github.com/Myriad-Dreamin/shiroa/releases/download/v0.1.0/charter-font-assets.tar.gz | tar -xvz -C assets/fonts/
-          curl -L https://github.com/Myriad-Dreamin/shiroa/releases/download/v0.1.5/source-han-serif-font-assets.tar.gz | tar -xvz -C assets/fonts/
-      - name: Install Rust
-        uses: dtolnay/rust-toolchain@stable
-      - name: Set Node.js 22.x
-        uses: actions/setup-node@v3
-        with:
-          node-version: 22.x
-      - name: Install Artifact Cache
-        uses: Swatinem/rust-cache@v2
-      - name: Build Book (Paged Target)
+          mkdir -p assets/fonts/
+          curl -L https://github.com/Myriad-Dreamin/shiroa/releases/download/v0.1.2/font-assets.tar.gz | tar -xvz -C assets/fonts
+      - name: Download & install shiroa
         run: |
-          cargo run --release --bin shiroa -- build --font-path assets/fonts --path-to-root /shiroa/paged/ -w . github-pages/docs
-          mv ./github-pages/dist/ ./github-pages/dist-paged/
-          mkdir -p ./github-pages/dist/
-          mv ./github-pages/dist-paged ./github-pages/dist/paged
+          curl -L https://github.com/Myriad-Dreamin/shiroa/releases/download/v0.2.0-nightly1/shiroa-x86_64-unknown-linux-gnu.tar.gz | tar -xvz
+          chmod +x shiroa-x86_64-unknown-linux-gnu/bin/shiroa
+          sudo cp shiroa-x86_64-unknown-linux-gnu/bin/shiroa /usr/bin/shiroa
       - name: Build Book
         run: |
-          cargo run --release --bin shiroa -- build --font-path assets/fonts --path-to-root /shiroa/ -w . github-pages/docs --mode static-html
+          shiroa build --font-path ./assets/typst-fonts/ --font-path ./assets/fonts/ --path-to-root /{{repo-name}}/ -w . src 
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v3
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v1
         with:
           # Upload `/github-pages` sub directory
-          path: './github-pages/dist'
+          path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v2
