@@ -1,0 +1,15 @@
+version = "0.1.0"
+content_dir = "pages"
+
+[html.spine]
+title = "Regional Rail for Chicagoland DRAFT"
+vertebrae = ["index.typ", "phase-1/fare-integration.typ"]
+
+[epub.spine]
+title = "Regional Rail for Chicagoland DRAFT"
+vertebrae = ["index.typ", "phase-1/fare-integration.typ"]
+
+[pdf.spine]
+title = "Regional Rail for Chicagoland DRAFT"
+vertebrae = ["index.typ", "phase-1/fare-integration.typ"]
+merge = true

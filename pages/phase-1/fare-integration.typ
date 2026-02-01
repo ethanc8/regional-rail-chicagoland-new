@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: LGPL-2.1-or-later
-#import "@preview/shiroa:0.3.1": *
+#import "../rheobook.typ": rheobook
+#show: rheobook.with(current-page: "fare-integration")
 
-#import "/book.typ": book-page
-#show: book-page.with(title: "Fare integration")
+= Fare integration
 
 This article will go over why we want fare integration, what else we want from the fare system, and 
 
@@ -28,7 +28,7 @@ In SB 2111, ILGA required:
   - Reduced fare program for domestic violence and sexual assault survivors
   - Fare capping
 
-Additionally, ILGA required in SB 2111 (#link("https://www.ilga.gov/Documents/Legislation/PublicActs/104/PDF/104-0457.pdf#page=289")[70 ILCS 3615/3B.27]) that NICTD be permitted to pick up passengers at stations shared with the Metra Electric District. In order to gain the most value from doing so, NICTD fares should be integrated with Metra fares. Additionally, we propose other improvements to NICTD and Metra Electric scheduling that depend on fare integration between the two systems in #cross-link("/phase-1/me-ssl.typ")[Phase 1's ME/SSL plan].
+Additionally, ILGA required in SB 2111 (#link("https://www.ilga.gov/Documents/Legislation/PublicActs/104/PDF/104-0457.pdf#page=289")[70 ILCS 3615/3B.27]) that NICTD be permitted to pick up passengers at stations shared with the Metra Electric District. In order to gain the most value from doing so, NICTD fares should be integrated with Metra fares. Additionally, we propose other improvements to NICTD and Metra Electric scheduling that depend on fare integration between the two systems in #link("./me-ssl.typ")[Phase 1's ME/SSL plan].
 
 == What else do we want from the fare system?
 
