@@ -3,10 +3,11 @@
 #show: book
 
 #book-meta(
-  title: "Regional Rail for Chicagoland",
+  title: "Regional Rail for Chicagoland DRAFT",
   authors: ("Ethan C",),
   summary: [
     #prefix-chapter("index.typ")[Introduction]
+    #prefix-chapter("acknowledgements.typ")[Acknowledgements]
     = Overview
     - #chapter("overview/overview.typ")[Overview]
     = Core concepts
