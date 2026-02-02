@@ -4,7 +4,7 @@
 #import "/book.typ": book-page
 #show: book-page.with(title: "Fare integration")
 
-This article will go over why we want fare integration, what else we want from the fare system, and 
+This article will go over why we want fare integration, what else we want from the fare system, and a proposal for a fare system that increases ridership, reduces the costs riders have to pay, and reduces operating costs.
 
 == Why fare integration?
 
@@ -23,7 +23,7 @@ In SB 2111, ILGA required:
 - Before summer 2028: (#link("https://www.ilga.gov/Documents/Legislation/PublicActs/104/PDF/104-0457.pdf#page=150")[70 ILCS 3615/2.04(j)(4)])
   - Income-based reduced fare programs for:
     - veterans
-    - formerly incarcareated adults
+    - recently incarcareated adults
     - homeless people
   - Reduced fare program for domestic violence and sexual assault survivors
   - Fare capping
@@ -34,13 +34,21 @@ Additionally, ILGA required in SB 2111 (#link("https://www.ilga.gov/Documents/Le
 
 === Lower operating costs for the regional rail system
 
-In SB 2111 (#link("https://www.ilga.gov/Documents/Legislation/PublicActs/104/PDF/104-0457.pdf#page=306")[70 ILCS 3615/4.01(j)]), ILGA required that NITA realize significant savings for the 2026-2027 fiscal year. Additionally, in order to deliver our proposed major service increases to the regional rail system at a reasonable operating cost, we must drastically reduce cost per revenue hour. We show later that better fare policy can drastically reduce our operating costs.
+In SB 2111 (#link("https://www.ilga.gov/Documents/Legislation/PublicActs/104/PDF/104-0457.pdf#page=306")[70 ILCS 3615/4.01(j)]), ILGA required that NITA realize significant savings for the 2026-2027 fiscal year. Additionally, in order to deliver our proposed major service increases to the regional rail system at a reasonable operating cost, we must drastically reduce cost per revenue hour. We show later that a better fare system can drastically reduce our operating costs. (However, note that many of these operating cost reductions also need other improvements, like level boarding and modern rolling stock.)
 
 === All-door boarding on buses
 
 === Drive ridership via sunk-cost on passes
 
-== A proposal for fare integration, with proof-of-payment
+== Proof of payment
+
+
+
+== A proposal for fare structure: zone-based
+
+
+
+== A proposal for fare structure: distance-based
 
 
 
