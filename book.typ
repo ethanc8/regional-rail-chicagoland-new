@@ -17,15 +17,19 @@
     - #chapter(none)[Rolling stock]
     - #chapter(none)[Improved timetabling]
     
-    = Phase 1: No new infrastructure
+    = Phase 1: The infrastructure of 2027
     - #chapter("phase-1/introduction.typ")[Introduction]
     - #chapter("core-concepts/fare-integration.typ")[Fare integration]
-    - #chapter(none)[ME/SSL]
+    - #chapter("lines/me-ssl/timetabling-phase1.typ")[ME/SSL]
     - #chapter(none)[RI]
 
     // = Phase 2: Capacity improvements
 
     // = Vision of the future network
+
+    = Lines
+    - #chapter("lines/me-ssl/index.typ")[ME/SSL]
+      - #chapter("lines/me-ssl/timetabling-phase1.typ")[Timetabling for Phase 1]
 
     = Concepts and costs
     - #chapter("concepts-and-costs/stations.typ")[Stations]
